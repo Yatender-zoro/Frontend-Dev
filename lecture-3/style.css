@@ -1,5 +1,5 @@
 .container {
-    height: 100vh;
+    
     background-color: lightgrey;
     margin: 0 auto;
     width: 600px;
@@ -29,4 +29,12 @@
     width: 200px;
     padding: 10px;
     border: 10px solid green;    
+}
+
+.box1 {
+    transition: transform 2s ease-in; /* smooth transition */
+}
+
+.box1:hover {  /* or trigger via JS */
+    transform: translateX(50px);  /* moves box 50px to right */
 }
