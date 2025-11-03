@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.calc{
+    width: 21rem;
+    height: 31rem;
+    margin: 5rem auto;
+    border: 5px solid black;
+    border-radius: 2%;
+    background-color: black;
+}
+
+.screen{
+    height: 4rem;
+    background-image: linear-gradient(to right,rgb(200, 255, 0),rgb(255, 85, 0));
+    border: solid 2px rgb(236, 228, 228);
+    background-color: black;
+}
+
+.keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 20.4rem;
+    gap: 0.2rem;
+    height: 26.5rem;
+    background-color: black;
+    overflow: hidden;
+}
+
+.btn{
+    border-radius: 10%;
+    background-image: linear-gradient(to right,rgb(255, 51, 0),rgb(255, 153, 0));
+}
