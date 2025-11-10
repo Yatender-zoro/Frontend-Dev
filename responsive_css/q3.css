@@ -1,0 +1,46 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    padding: 30px;
+  }
+
+  .container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .card{
+    background: white;
+    padding: 30px;
+    flex: 1 1 calc(25% - 20px); /* desktop = 4 cards */
+    border-radius: 10px;
+    text-align: center;
+    transition: background .25s ease;
+    min-width: 200px;
+  }
+
+  .card:hover{
+    background: #e0e0e0;
+  }
+
+  /* Tablet: 2 columns */
+  @media (max-width: 900px){
+    .card{
+      flex: 1 1 calc(50% - 20px);
+    }
+  }
+
+  /* Mobile: 1 column */
+  @media (max-width: 600px){
+    .card{
+      flex: 1 1 100%;
+    }
+  }

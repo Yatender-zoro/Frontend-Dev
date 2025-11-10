@@ -1,0 +1,43 @@
+*{ margin: 0; padding: 0; box-sizing: border-box; }
+
+  body{
+    font-family: Arial, sans-serif;
+    background: #f3f3f3;
+    padding: 30px;
+  }
+
+  .container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .box{
+    text-align: center;
+    flex: 1;
+  }
+
+  img{
+    width: 100%;
+    max-width: 450px;
+    border-radius: 8px;
+    transition: filter .4s ease;
+  }
+
+  /* Right image has filter applied */
+  .after img{
+    filter: brightness(50%);
+  }
+
+  /* Hover removes filter */
+  .after img:hover{
+    filter: none;
+  }
+
+  /* Responsive — stack vertically */
+  @media (max-width: 700px){
+    .container{
+      flex-direction: column;
+      align-items: center;
+    }
+  }
